@@ -1,7 +1,3 @@
 import { defineLithiaConfig } from 'lithia/config';
 
-export default defineLithiaConfig({
-  server: {
-    port: 3000,
-  },
-});
+export default defineLithiaConfig({});
