@@ -11,7 +11,7 @@ export default async function handle(req: LithiaRequest, res: LithiaResponse) {
   });
 
   if (!user) {
-    throw new NotFoundError(`User does not exist with id ${id}`);
+    throw new NotFoundError(`Cannot find user with id ${id}`);
   }
 
   res.json(user);
