@@ -1,8 +1,7 @@
 import db from '@/db';
 import { usersTable } from '@/db/schema';
 import { eq } from 'drizzle-orm';
-import { ConflictError } from 'lithia/core';
-import { LithiaRequest, LithiaResponse } from 'lithia/types';
+import { ConflictError, LithiaRequest, LithiaResponse } from 'lithia';
 
 export default async function handle(req: LithiaRequest, res: LithiaResponse) {
   const body = await req.body<{

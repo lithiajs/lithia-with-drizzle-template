@@ -1,8 +1,7 @@
 import db from '@/db';
 import { usersTable } from '@/db/schema';
 import { eq } from 'drizzle-orm';
-import { NotFoundError } from 'lithia/core';
-import { LithiaRequest, LithiaResponse } from 'lithia/types';
+import { LithiaRequest, LithiaResponse, NotFoundError } from 'lithia';
 
 export default async function handle(req: LithiaRequest, res: LithiaResponse) {
   const id = Number(req.params.id);

@@ -1,3 +1,3 @@
-import { defineLithiaConfig } from 'lithia/config';
+import { defineLithiaConfig } from 'lithia';
 
 export default defineLithiaConfig({});
